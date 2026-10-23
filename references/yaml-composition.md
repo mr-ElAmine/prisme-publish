@@ -124,8 +124,15 @@ les couleurs de Prisme à une représentation d’un autre site.
   colonnes se décrivent dans ses styles, sans inventer un composant Row/Column.
 - `Typography` expose `text`, `as`, `attrs` et les apparences.
 - `Icon` expose `name`, `size`, `strokeWidth`, un éventuel `label` et les apparences.
-  Le schéma déclare les noms disponibles ; ne pas inventer une icône inconnue.
+  Ne pas inventer une icône inconnue ; utiliser les noms du catalogue ci-dessous.
 - `Image` est un emplacement gris avec une icône et un `label`, pas un asset distant.
+
+Noms d’icônes du catalogue courant : `arrow-left`, `arrow-right`, `check`,
+`chevron-down`, `chevron-right`, `circle-check`, `circle-help`, `clock`, `credit-card`,
+`download`, `file`, `globe`, `heart`, `house`, `image`, `info`, `mail`, `map-pin`,
+`menu`, `minus`, `phone`, `plane`, `plus`, `rotate-cw`, `search`, `settings`,
+`shield-check`, `shopping-cart`, `star`, `trash`, `upload`, `user`, `users`, `x`.
+La validation du serveur choisi reste nécessaire si sa version diffère.
 
 Un bouton figé est `Div` avec `as: button`, `attrs.type: button` et des enfants.
 Un champ passe par `Div` avec `as: input` et `attrs.defaultValue`/`readOnly` ; pas

@@ -52,22 +52,9 @@ Dans l'agent, demander par exemple :
 > avec des données fictives. Garde les YAML dans docs/prisme/parcours, valide puis
 > publie et donne-moi le lien. Aucun test du front.
 
-Le skill suit le workflow de `SKILL.md`. L'installation n'autorise aucun appel
-distant ni publication ; la publication exige une demande explicite. Le HTML
-est public par son lien : ne pas envoyer de secrets ou de données personnelles.
-Les YAML sources restent dans le projet de travail, pas dans le dossier du skill.
-
-Pour exécuter le helper depuis un terminal, `PRISME_SKILL_DIR` désigne le chemin
-réel renvoyé par l'installateur, vers le dossier contenant `SKILL.md` :
-
-```sh
-node "$PRISME_SKILL_DIR/runtime/prisme.cjs" --help
-node "$PRISME_SKILL_DIR/runtime/prisme.cjs" schema
-node "$PRISME_SKILL_DIR/runtime/prisme.cjs" validate --file /chemin/absolu/mon-projet
-```
-
-`--help` est local ; `schema` et `validate` contactent le serveur sans publier.
-Les références de `project.yaml` sont assemblées en mémoire avant l'envoi.
+L’agent suit `SKILL.md`. Pour les commandes et règles d’envoi, lire
+[le workflow MCP](publication.md). L’installation ne publie rien et n’autorise
+aucun appel distant. Les YAML restent dans le projet de travail, pas dans le skill.
 
 ## Archive et maintenance
 

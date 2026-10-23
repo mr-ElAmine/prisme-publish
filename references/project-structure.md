@@ -134,10 +134,9 @@ Pour ce mode, la somme UTF-8 des fichiers lus et le YAML assemblé sont chacun b
 Les alias YAML, tags inconnus, clés dupliquées et documents multiples sont refusés.
 Un YAML autonome transmis seul est conservé à l’identique.
 
-Suivre les commandes et règles d’autorisation de `SKILL.md` : `schema`, puis
-`validate` ; `publish` uniquement si demandé. La même chaîne assemblée est envoyée
-à `validate_presentation`, puis à `publish_presentation`, sans relire les fichiers
-entre les deux. Ne jamais envoyer `project.yaml` brut directement à ces outils.
+Suivre [le workflow MCP](publication.md) pour les commandes, l’autorisation de
+publication et les limites. Ne jamais envoyer `project.yaml` brut directement
+aux outils du serveur.
 
 Un diagnostic local donne un code, un fichier relatif et, pour les problèmes de
 schéma, un chemin de propriété. Corriger la source concernée puis revalider, sans
