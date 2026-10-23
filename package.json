@@ -1,0 +1,33 @@
+{
+  "name": "@prisme/publish-skill",
+  "version": "0.1.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr-ElAmine/prisme-publish.git"
+  },
+  "type": "module",
+  "packageManager": "pnpm@10.33.2",
+  "engines": {
+    "node": "24.x"
+  },
+  "exports": {
+    "./client": "./scripts/client.ts",
+    "./internal/*": "./scripts/*"
+  },
+  "scripts": {
+    "start": "node runtime/prisme.cjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.3.1",
+    "commander": "15.0.0",
+    "fs-extra": "11.4.1",
+    "neverthrow": "8.2.0",
+    "pathe": "2.0.3",
+    "yaml": "2.9.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "11.0.4"
+  }
+}

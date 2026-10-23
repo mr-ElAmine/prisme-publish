@@ -1,0 +1,17 @@
+format: prisme/presentation@1
+title: Présentation à préparer
+description: Résumer ici le sujet et la décision attendue.
+sections:
+  - title: Le besoin
+    steps:
+      - title: La situation actuelle
+        description: Décrire ce qui est constaté, sans inventer de faits.
+        content:
+          - type: text
+            text: Remplacer ce texte par le besoin réellement observé.
+  - title: La proposition
+    steps:
+      - title: Le changement proposé
+        content:
+          - type: text
+            text: Expliquer ce qui changerait et ce qui reste à décider.

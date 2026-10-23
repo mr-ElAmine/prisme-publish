@@ -1,0 +1,29 @@
+format: prisme/page@2
+id: mobile
+title: La proposition sur téléphone
+description: Même navbar et panier, avec un bouton illustratif supplémentaire.
+label: Maquette mobile figée, aucun paiement possible.
+frame:
+  variant: phone
+  finish: titanium
+  showDynamicIsland: true
+data:
+  content:
+    - use: screen
+      id: mobile
+      with:
+        title: La proposition
+        amount: 110 €
+        content:
+          - type: Div
+            props:
+              id: action
+              as: button
+              attrs:
+                type: button
+              styles: action
+              content:
+                - type: Typography
+                  props:
+                    id: action-label
+                    text: Nouvelle action — représentation figée

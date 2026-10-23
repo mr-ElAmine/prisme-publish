@@ -1,0 +1,7 @@
+css:
+  background:
+    token: surface
+  color:
+    token: ink
+  font-size: 14
+  min-height: 100%

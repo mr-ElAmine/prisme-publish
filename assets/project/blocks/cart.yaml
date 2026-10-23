@@ -1,0 +1,23 @@
+format: prisme/block@1
+parameters:
+  amount:
+    type: string
+    default: 120 €
+content:
+  - type: Div
+    props:
+      id: summary
+      as: aside
+      styles: cart
+      content:
+        - type: Typography
+          props:
+            id: total-label
+            as: p
+            text: Total illustratif
+        - type: Typography
+          props:
+            id: amount
+            as: strong
+            text:
+              param: amount

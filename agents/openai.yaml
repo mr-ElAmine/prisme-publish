@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prisme · Publier une présentation"
+  short_description: "Préparer, valider et publier via le MCP Prisme"
+  default_prompt: "Utilise $prisme-publish pour préparer le YAML de cette présentation, le valider puis le publier sur le serveur MCP indiqué."

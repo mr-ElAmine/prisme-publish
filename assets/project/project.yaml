@@ -1,0 +1,18 @@
+format: prisme/project@1
+id: example
+title: Exemple de présentation
+description: Deux étapes figées, avec les mêmes blocs et le même thème.
+tokens: theme/tokens.yaml
+defaults: theme/defaults.yaml
+styles:
+  - styles/common.yaml
+blocks:
+  navbar: blocks/navbar.yaml
+  cart: blocks/cart.yaml
+  screen: blocks/screen.yaml
+sections:
+  - id: journey
+    title: Le parcours
+    pages:
+      - pages/web.yaml
+      - pages/mobile.yaml

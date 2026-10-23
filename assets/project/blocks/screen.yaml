@@ -1,0 +1,31 @@
+format: prisme/block@1
+parameters:
+  title:
+    type: string
+  amount:
+    type: string
+    default: 120 €
+  content:
+    type: slot
+    default: []
+content:
+  - type: Div
+    props:
+      id: page
+      styles: page
+      content:
+        - use: navbar
+          id: navbar
+        - type: Typography
+          props:
+            id: title
+            as: h1
+            text:
+              param: title
+            styles: heading
+        - param: content
+        - use: cart
+          id: cart
+          with:
+            amount:
+              param: amount

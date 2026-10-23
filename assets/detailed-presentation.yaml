@@ -1,0 +1,105 @@
+format: prisme/presentation@2
+title: Présentation du parcours
+description: Deux représentations figées, une page web et un téléphone.
+lots:
+  - id: first
+    number: 1
+    title: Exemple de modification
+    color: "#317a54"
+tokens:
+  brand: "#317a54"
+defaults:
+  css:
+    background: "#ffffff"
+    color: "#202020"
+    min-height: 100%
+    font-size: 14
+styles:
+  page:
+    css:
+      display: flex
+      flex-direction: column
+      gap: 16
+      padding: 32
+    compact:
+      padding: 16
+  heading:
+    css:
+      color:
+        token: brand
+      font-size: 28
+      font-weight: 700
+blocks:
+  screen:
+    format: prisme/block@1
+    parameters:
+      title:
+        type: string
+    content:
+      - type: Div
+        props:
+          id: page
+          styles: page
+          content:
+            - type: Typography
+              props:
+                id: heading
+                as: h1
+                text:
+                  param: title
+                styles: heading
+            - type: Image
+              props:
+                id: illustration
+                label: Emplacement réservé à une illustration
+                css:
+                  height: 180
+                  border-radius: 12
+            - type: Div
+              props:
+                id: action
+                as: button
+                attrs:
+                  type: button
+                css:
+                  background:
+                    token: brand
+                  color: "#ffffff"
+                  border: none
+                  border-radius: 8
+                  padding: 12
+                content:
+                  - type: Typography
+                    props:
+                      id: action-label
+                      text: Continuer
+sections:
+  - id: journey
+    title: Le parcours
+    steps:
+      - id: web
+        title: La page web
+        description: Exemple figé dans le cadre navigateur.
+        frame:
+          variant: browser
+          theme: light
+          url: exemple.fr/parcours
+        data:
+          content:
+            - use: screen
+              id: web-screen
+              with:
+                title: Le parcours sur le web
+      - id: mobile
+        title: Le téléphone
+        description: Le même bloc réutilisé dans le cadre téléphone.
+        frame:
+          variant: phone
+          finish: titanium
+          showDynamicIsland: true
+        data:
+          content:
+            - use: screen
+              id: mobile-screen
+              with:
+                title: Le parcours sur mobile

@@ -1,0 +1,15 @@
+format: prisme/page@2
+id: web
+title: La page web
+description: Le gabarit partagé, sans action supplémentaire.
+label: Maquette web figée, montant fictif.
+frame:
+  variant: browser
+  theme: light
+  url: exemple.fr/parcours
+data:
+  content:
+    - use: screen
+      id: web
+      with:
+        title: Votre parcours
